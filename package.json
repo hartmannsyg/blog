@@ -1,0 +1,38 @@
+{
+  "name": "xs-spin-blog",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "new": "hexo new",
+    "build": "hexo generate && hexo clean && hexo generate",
+    "clean": "hexo clean",
+    "serve": "hexo server --log"
+  },
+  "hexo": {
+    "version": "6.3.0"
+  },
+  "dependencies": {
+    "hexo": "^6.3.0",
+    "hexo-browsersync": "^0.3.0",
+    "hexo-clean-css": "^2.0.0",
+    "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-index": "^2.0.0",
+    "hexo-generator-search": "^2.4.3",
+    "hexo-generator-seo-friendly-sitemap": "^0.2.1",
+    "hexo-generator-tag": "^1.0.0",
+    "hexo-html-minifier": "^1.0.0",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-markdown-it": "^6.1.0",
+    "hexo-renderer-stylus": "^2.1.0",
+    "hexo-server": "^3.0.0",
+    "hexo-uglify": "^2.0.0",
+    "jsdom": "^20.0.3",
+    "katex": "^0.16.2",
+    "markdown-it-imsize": "^2.0.1",
+    "markdown-it-texmath": "^1.0.0",
+    "twemoji": "^14.0.2",
+    "unfurl.js": "^6.1.0"
+  },
+  "devDependencies": {}
+}
