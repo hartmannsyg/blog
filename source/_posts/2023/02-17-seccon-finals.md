@@ -1614,7 +1614,7 @@ When `notes.splice(1, 1)` was executed, the `get` handler of Proxy was **implici
 
 My solution abuses the above behavior to construct a time-based oracle.
 
-Firstly, my solver lets the bot pollute cache in the template engine (`index.html`):
+Firstly, my solver lets the bot pollute cache in the template engine as follows (in `index.html`):
 ```javascript
     const polluteCache = async (flagIndex) => {
       const evilNote = `${flagIndex}-{{notes.${flagIndex}}}-{{emoji}}`;
@@ -1642,7 +1642,7 @@ Firstly, my solver lets the bot pollute cache in the template engine (`index.htm
     main();
 ```
 
-Next, my solver leaks the flag using the time-based oracle (`index.js`):
+Next, my solver leaks the flag characters using the time-based oracle as follows (in `index.js`):
 ```javascript
 const leak = async (flagIndex, cookie) => {
   let minTime = 1e10;
