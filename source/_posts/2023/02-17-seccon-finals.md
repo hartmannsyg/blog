@@ -11,7 +11,7 @@ I wrote all the web challenges in SECCON CTF 2022 Finals, following the [Quals](
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">よろしくお願いします <a href="https://t.co/dAsizpvpLv">pic.twitter.com/dAsizpvpLv</a></p>&mdash; Ark (@arkark_) <a href="https://twitter.com/arkark_/status/1624200571308892161?ref_src=twsrc%5Etfw">February 11, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-In this post, I describes my solution for the following challenges:
+In this post, I describe my solution for the following challenges:
 |Challenge|Category|Intended<br>Difficulty|Score<br>(static)|Solved / 10<br>(Internatinal)|Solved / 12<br>(Domestic)|
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |babybox|web|warmup|100|6|4|
@@ -284,7 +284,7 @@ app.use(async (ctx, next) => {
 });
 ```
 
-In this part, why is used `JSON.stringify`?
+In this part, why is `JSON.stringify` used?
 Are there cases that `ctx.body` is not `string`?
 
 Yes.
@@ -316,7 +316,7 @@ Keep-Alive: timeout=5
 }
 ```
 
-If you can causes an error including a substring of a flag so that it don't match with `/SECCON{\w+}/`, you can avoids the WAF and get the substring in the response body.
+If you can cause an error including a substring of a flag so that it don't match with `/SECCON{\w+}/`, you can avoid the WAF and get the substring in the response body.
 
 Here, you need one idea: what would happen if the stdout of a subprocess is very very very large?
 
@@ -337,7 +337,7 @@ Keep-Alive: timeout=5
 }
 ```
 
-It cases an error and the `stdout` of the error object is a prefix of the file content.
+It causes an error and the `stdout` of the error object is a prefix of the file content.
 
 [Noje.js docs](https://nodejs.org/dist/latest-v19.x/docs/api/child_process.html#child_processexecfilefile-args-options-callback) says the following for `maxBuffer` option of `execFile`:
 
