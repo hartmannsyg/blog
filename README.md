@@ -7,13 +7,13 @@
 Start a development server:
 
 ```sh
-$ yarn serve
+$ npm run dev
 ```
 
 Create a new post:
 
 ```sh
-$ yarn new {blog_title}
+$ npm run new {blog_title}
 ```
 
 -> `source/_posts/{yyyy}/{mm}-{dd}-{blog_title}.md`

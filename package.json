@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "new": "hexo new",
+    "dev": "hexo server --log",
     "build": "hexo generate && hexo clean && hexo generate",
-    "clean": "hexo clean",
-    "serve": "hexo server --log"
+    "clean": "hexo clean"
   },
   "hexo": {
     "version": "6.3.0"
