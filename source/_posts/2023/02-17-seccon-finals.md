@@ -27,15 +27,13 @@ These seemed hard compared to the other categories and there were two 0-solved c
 - Team info: https://www.seccon.jp/2022/ep230211.html#ctf-i
 - ctftime (international): https://ctftime.org/event/1864
 - ctftime (domestic): https://ctftime.org/event/1863
-- Official repository: (TODO)
-    - The repository is not yet published by SECCON, so I temporarily  uploaded sources and solvers for my challenges:
-        - https://github.com/arkark/seccon-ctf-2022-finals-web
+- Official repository: https://github.com/SECCON/SECCON2022_final_CTF
 
 ## [web 100] babybox
 
 - International: 6 solved / 10
 - Domestic:  4 solved / 12
-- https://github.com/arkark/seccon-ctf-2022-finals-web/tree/main/web/babybox
+- https://github.com/SECCON/SECCON2022_final_CTF/tree/main/jeopardy/web/babybox
 
 Description:
 
@@ -195,7 +193,7 @@ SECCON{pr0totyp3_po11ution_iS_my_friend}
 
 - International: 10 solved / 10
 - Domestic: 8 solved / 12
-- https://github.com/arkark/seccon-ctf-2022-finals-web/tree/main/web/easylfi2
+- https://github.com/SECCON/SECCON2022_final_CTF/tree/main/jeopardy/web/easylfi2
 
 Description:
 
@@ -405,7 +403,7 @@ SECCON{Wha7_files_did_you_use_to_s0lve_1t}
 
 - International: 3 solved / 10
 - Domestic: 1 solved / 12
-- https://github.com/arkark/seccon-ctf-2022-finals-web/tree/main/web/maas
+- https://github.com/SECCON/SECCON2022_final_CTF/tree/main/jeopardy/web/maas
 
 Description:
 
@@ -795,7 +793,7 @@ SECCON{csp_bypa55_is_a_type_0f_puzzle_games_for_h4ckerS}
 
 - International: 0 solved / 10
 - Domestic: 0 solved / 12
-- https://github.com/arkark/seccon-ctf-2022-finals-web/tree/main/web/light-note
+- https://github.com/SECCON/SECCON2022_final_CTF/tree/main/jeopardy/web/light-note
 
 Description:
 
@@ -1262,7 +1260,7 @@ SECCON{induction_i5_one_0f_my_favarite_g4mes}
 
 - International: 0 solved / 10
 - Domestic: 0 solved / 12
-- https://github.com/arkark/seccon-ctf-2022-finals-web/tree/main/web/dark-note
+- https://github.com/SECCON/SECCON2022_final_CTF/tree/main/jeopardy/web/dark-note
 
 Description:
 
