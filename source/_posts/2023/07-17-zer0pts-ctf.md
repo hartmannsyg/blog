@@ -4,7 +4,7 @@ thumbnail: /images/2023/20230717-zer0pts-ctf-01.png
 date: 2023-07-17 23:00:00
 tags:
     - CTF
-description:
+description: zer0pts CTF 2023 に./Vespiaryで参加して8位でした！web問のWarmuprofile、jqi、Neko Note、Plain Blogを解いたので以下はそのwriteupです。
 ---
 
 zer0pts CTF 2023 に./Vespiaryで参加して8位でした！
