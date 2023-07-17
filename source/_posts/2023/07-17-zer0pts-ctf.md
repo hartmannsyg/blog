@@ -266,7 +266,7 @@ fastify.get('/api/search', async (request, reply) => {
 - `#`でコメントアウト
 - `implode`による任意文字列の生成
     - validationで`"`の文字種が利用できなかったため
-- オラクル: `if (env.FLAG | startswith(...)) then error({make_str('x')}) else 0 end`
+- オラクル: `if (env.FLAG | startswith(...)) then error(...) else 0 end`
     - `env.FLAG | startswith(...)`によるフラグのprefix判定
     - `error`によるランタイムエラーの発生
 
