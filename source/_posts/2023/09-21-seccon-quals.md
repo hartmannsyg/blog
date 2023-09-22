@@ -504,7 +504,7 @@ sort.Slice(notes, func(i, j int) bool {
 })
 ```
 
-The documents says:
+The document says:
 
 - https://pkg.go.dev/sort#Slice
 
@@ -631,7 +631,7 @@ See my solver below for details.
 
 ### Solver
 
-Here is my solver:
+Here is my full exploit:
 
 - https://github.com/arkark/my-ctf-challenges/tree/main/challenges/202309_SECCON_CTF_2023_Quals/web/hidden-note/solver
 
@@ -713,12 +713,12 @@ with tempfile.NamedTemporaryFile(suffix=".rs") as file:
         print("timeout")
 ```
 
-You can insert any Rust program and the goal is to steal a flag in the comment of the inserted source code.
+You can insert any Rust program, and the goal is to steal a flag in the comment in the inserted source code.
 
 ```python
 print(":)" if proc.returncode == 0 else ":(")
 ```
-By this line, you can get information about whether the compilation by `rustc` is successful or not.
+At this line, you can get information about whether the compilation by `rustc` is successful or not.
 
 ### Solution
 
@@ -759,9 +759,9 @@ const fn _contains(query: &[u8]) {
 }
 ```
 
-Using this function, you can the entire flag string.
+Finally, you can get the entire flag string using this function.
 
-As another solution, you can use `/proc/1/environ` instead of `file!()`.
+As another solution, you can also use `/proc/1/environ` instead of `file!()`.
 
 ### Solver
 
