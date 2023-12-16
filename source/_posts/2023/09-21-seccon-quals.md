@@ -160,7 +160,7 @@ const id = setInterval(target.togglePopover, 400);
 
 It means that `setInterval` can be XSS sinks if `target.togglePopover.toString` is controllable.
 
-Yeah, DOM clobbering enables it!
+Interestingly, DOM clobbering enables it!
 
 If you render the following HTML:
 ```html

@@ -1,5 +1,5 @@
 ---
-title: SECCON CTF 2022 Quals writeup - English
+title: "SECCON CTF 2022 Quals: Author writeups - English"
 thumbnail: /images/2022/20221118-seccon-top.png
 date: 2022-11-18 23:00:00
 tags:
@@ -28,16 +28,12 @@ My challenge list:
 
 [^top-1]: Because of my lack of consideration, many players solved this challenge by unintended solutions :cry:
 
-## Links
-
-- ctftime: https://ctftime.org/event/1764
-- Official repository: https://github.com/SECCON/SECCON2022_online_CTF
-    - There are sources and solvers for all challenges.
+I added the source code and author's solvers to [my-ctf-challenges](https://github.com/arkark/my-ctf-challenges) repository.
 
 ## [web] skipinx
 
 - 102 teams solved / 100 points
-- https://github.com/SECCON/SECCON2022_online_CTF/tree/main/web/skipinx
+- https://github.com/arkark/my-ctf-challenges/tree/main/challenges/202211_SECCON_CTF_2022_Quals/web/skipinx
 
 Description:
 
@@ -135,7 +131,7 @@ SECCON{sometimes_deFault_options_are_useful_to_bypa55}
 ## [web] easylfi
 
 - 62 teams solved / 124 points
-- https://github.com/SECCON/SECCON2022_online_CTF/tree/main/web/easylfi
+- https://github.com/arkark/my-ctf-challenges/tree/main/challenges/202211_SECCON_CTF_2022_Quals/web/easylfi
 
 Description:
 
@@ -379,7 +375,7 @@ SECCON{i_lik3_fe4ture_of_copy_aS_cur1_in_br0wser}
 ## [web] bffcalc
 
 - 41 teams solved / 149 points
-- https://github.com/SECCON/SECCON2022_online_CTF/tree/main/web/bffcalc
+- https://github.com/arkark/my-ctf-challenges/tree/main/challenges/202211_SECCON_CTF_2022_Quals/web/bffcalc
 
 Description:
 
@@ -606,7 +602,7 @@ SECCON{i5_1t_p0ssible_tO_s7eal_http_only_cooki3_fr0m_XSS}
 ## [web] piyosay
 
 - 19 teams solved / 210 points
-- https://github.com/SECCON/SECCON2022_online_CTF/tree/main/web/piyosay
+- https://github.com/arkark/my-ctf-challenges/tree/main/challenges/202211_SECCON_CTF_2022_Quals/web/piyosay
 
 Description:
 
@@ -839,7 +835,7 @@ SECCON{w0w_yoU_div3d_deeeeeep_iNto_DOMPurify}
 ## [web] denobox
 
 - 1 teams solved / 500 points
-- https://github.com/SECCON/SECCON2022_online_CTF/tree/main/web/denobox
+- https://github.com/arkark/my-ctf-challenges/tree/main/challenges/202211_SECCON_CTF_2022_Quals/web/denobox
 
 Description:
 
@@ -1115,7 +1111,7 @@ ref. https://github.com/denoland/deno/blob/v1.27.1/README.md?plain=1#L6
 ## [web] spanote
 
 - 1 teams solved / 500 points
-- https://github.com/SECCON/SECCON2022_online_CTF/tree/main/web/spanote
+- https://github.com/arkark/my-ctf-challenges/tree/main/challenges/202211_SECCON_CTF_2022_Quals/web/spanote
 
 Description:
 
@@ -1481,7 +1477,7 @@ SECCON{hack3rs_po11ute_3verything_by_v4ri0us_meanS}
 ## [misc] latexipy
 
 - 8 teams solved / 305 points
-- https://github.com/SECCON/SECCON2022_online_CTF/tree/main/misc/latexipy
+- https://github.com/arkark/my-ctf-challenges/tree/main/challenges/202211_SECCON_CTF_2022_Quals/misc/latexipy
 
 Description:
 
@@ -1672,7 +1668,7 @@ SECCON{UTF7_is_hack3r_friend1y_encoding}
 ## [misc] txtchecker
 
 - 23 teams solved / 193 points
-- https://github.com/SECCON/SECCON2022_online_CTF/tree/main/misc/txtchecker
+- https://github.com/arkark/my-ctf-challenges/tree/main/challenges/202211_SECCON_CTF_2022_Quals/misc/txtchecker
 
 Description:
 
@@ -1800,7 +1796,7 @@ SECCON{reDo5L1fe}
 ## [misc] noiseccon
 
 - 22 teams solved / 197 points
-- https://github.com/SECCON/SECCON2022_online_CTF/tree/main/misc/noiseccon
+- https://github.com/arkark/my-ctf-challenges/tree/main/challenges/202211_SECCON_CTF_2022_Quals/misc/noiseccon
 
 Description:
 

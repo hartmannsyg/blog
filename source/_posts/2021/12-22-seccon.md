@@ -1,5 +1,5 @@
 ---
-title: SECCON CTF 2021 author writeup (4 web challenges)
+title: "SECCON CTF 2021:  Author writeups (4 web challenges)"
 thumbnail: /images/2021/20211222-seccon-saas-1.png
 date: 2021-12-22 23:00:00
 tags:
@@ -22,15 +22,12 @@ If you know other solutions, please report to [me](https://twitter.com/arkark_).
 
 [^unintended]: I welcome unintended solutions because they help me learn something and create diversity in the challenges (but, as an author, I should emit no unintended solutions to maintain the quality of challenges).
 
-## Links
-
-- CTFtime: https://ctftime.org/event/1458
-- Official repository: https://github.com/SECCON/SECCON2021_online_CTF
+I added the source code and author's solvers to [my-ctf-challenges](https://github.com/arkark/my-ctf-challenges) repository.
 
 ## Sequence as a Service 1
 
 - 20 team solved / 205 pt
-- https://github.com/SECCON/SECCON2021_online_CTF/tree/main/web/sequence-as-a-service-1
+- https://github.com/arkark/my-ctf-challenges/tree/main/challenges/202112_SECCON_CTF_2021/web/sequence-as-a-service-1
 
 Description:
 > I've heard that SaaS is very popular these days. So, I developed it, too. You can access it here.
@@ -161,7 +158,7 @@ main();
 ## Sequence as a Service 2
 
 - 19 team solved / 210 pt
-- https://github.com/SECCON/SECCON2021_online_CTF/tree/main/web/sequence-as-a-service-2
+- https://github.com/arkark/my-ctf-challenges/tree/main/challenges/202112_SECCON_CTF_2021/web/sequence-as-a-service-2
 
 Description:
 > NEW FEATURE: You can get values from two sequences at the same time! Go here.
@@ -366,7 +363,7 @@ LJSON.stringify(($, map, n) => $(",",
 ## Cookie Spinner
 
 - 7 team solved / 322 pt
-- https://github.com/SECCON/SECCON2021_online_CTF/tree/main/web/cookie-spinner
+- https://github.com/arkark/my-ctf-challenges/tree/main/challenges/202112_SECCON_CTF_2021/web/cookie-spinner
 
 Description:
 > Do you like cookies? If so, go here now!
@@ -549,7 +546,7 @@ You can exploit with not `form` property, but another property.
 ## x-note
 
 - 3 team solved / 428 pt
-- https://github.com/SECCON/SECCON2021_online_CTF/tree/main/web/x-note
+- https://github.com/arkark/my-ctf-challenges/tree/main/challenges/202112_SECCON_CTF_2021/web/x-note
 
 Description:
 > Here is a secure note app!

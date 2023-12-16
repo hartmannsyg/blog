@@ -1,5 +1,5 @@
 ---
-title: SECCON CTF 2022 Finals writeup
+title: "SECCON CTF 2022 Finals: Author writeups"
 thumbnail: /images/2023/20230217-seccon-finals-top.jpg
 date: 2023-02-17 23:00:00
 tags:
@@ -20,20 +20,13 @@ In this post, I describe my solution for the following challenges:
 |light-note|web|medium|300|0|0|
 |dark-note|web|hard|500|0|0|
 
-These seemed hard compared to the other categories and there were two 0-solved challenges. So I'm sorry for the inappropriate scores bacause they are important values, especially in static scoring. I think it's very difficult to estimate the difficulty of tasks.
-
-## Links
-
-- Team info: https://www.seccon.jp/2022/ep230211.html#ctf-i
-- ctftime (international): https://ctftime.org/event/1864
-- ctftime (domestic): https://ctftime.org/event/1863
-- Official repository: https://github.com/SECCON/SECCON2022_final_CTF
+I added the source code and author's solvers to [my-ctf-challenges](https://github.com/arkark/my-ctf-challenges) repository.
 
 ## [web 100] babybox
 
 - International: 6 solved / 10
 - Domestic:  4 solved / 12
-- https://github.com/SECCON/SECCON2022_final_CTF/tree/main/jeopardy/web/babybox
+- https://github.com/arkark/my-ctf-challenges/tree/main/challenges/202302_SECCON_CTF_2022_Finals/web/babybox
 
 Description:
 
@@ -193,7 +186,7 @@ SECCON{pr0totyp3_po11ution_iS_my_friend}
 
 - International: 10 solved / 10
 - Domestic: 8 solved / 12
-- https://github.com/SECCON/SECCON2022_final_CTF/tree/main/jeopardy/web/easylfi2
+- https://github.com/arkark/my-ctf-challenges/tree/main/challenges/202302_SECCON_CTF_2022_Finals/web/easylfi2
 
 Description:
 
@@ -403,7 +396,7 @@ SECCON{Wha7_files_did_you_use_to_s0lve_1t}
 
 - International: 3 solved / 10
 - Domestic: 1 solved / 12
-- https://github.com/SECCON/SECCON2022_final_CTF/tree/main/jeopardy/web/maas
+- https://github.com/arkark/my-ctf-challenges/tree/main/challenges/202302_SECCON_CTF_2022_Finals/web/maas
 
 Description:
 
@@ -793,7 +786,7 @@ SECCON{csp_bypa55_is_a_type_0f_puzzle_games_for_h4ckerS}
 
 - International: 0 solved / 10
 - Domestic: 0 solved / 12
-- https://github.com/SECCON/SECCON2022_final_CTF/tree/main/jeopardy/web/light-note
+- https://github.com/arkark/my-ctf-challenges/tree/main/challenges/202302_SECCON_CTF_2022_Finals/web/light-note
 
 Description:
 
@@ -1260,7 +1253,7 @@ SECCON{induction_i5_one_0f_my_favarite_g4mes}
 
 - International: 0 solved / 10
 - Domestic: 0 solved / 12
-- https://github.com/SECCON/SECCON2022_final_CTF/tree/main/jeopardy/web/dark-note
+- https://github.com/arkark/my-ctf-challenges/tree/main/challenges/202302_SECCON_CTF_2022_Finals/web/dark-note
 
 Description:
 
