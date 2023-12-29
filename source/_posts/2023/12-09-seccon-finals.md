@@ -1,6 +1,6 @@
 ---
 title: "SECCON CTF 2023 Finals: Author Writeups"
-thumbnail: /images/2023/20231228_seccon-ctf-finals-top-01.jpg
+thumbnail: /images/2023/20231228_seccon-ctf-finals-top-01-small.jpg
 date: 2023-12-28 23:00:00
 tags:
     - CTF
