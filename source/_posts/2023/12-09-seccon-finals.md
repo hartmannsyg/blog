@@ -768,6 +768,8 @@ Therefore, using the oracle, it is also possible to leak one character of the fl
 
 In my solver, the function used for the timing attack is like this:
 ```javascript
+// https://github.com/arkark/my-ctf-challenges/blob/main/challenges/202312_SECCON_CTF_2023_Finals/web/domleakify/solver/public/main.js#L20-L45
+
 const measure = async (prefix) => {
   const hex = [...prefix]
     .map((c) => "\\" + c.charCodeAt(0).toString(16).padStart(2, "0"))
