@@ -1238,7 +1238,7 @@ bfcacheが使われない条件はたくさんあり、そのリストはこち�
 
 お手軽なのは`RelatedActiveContentsExist`で、`window.open()`を使って`window.opener`の参照を持つ状態にすることです。これは
 
-- https://web.dev/articles/bfcache#avoid_windowopener_references
+- https://web.dev/articles/bfcache?hl=en#avoid_windowopener_references
 
 でも紹介されています。
 
@@ -1431,7 +1431,7 @@ fastifyの実装を確認すると
         // Access to the deleted page again using History API
         // Then, the browser will render the cached page and the XSS will occur!
         // Note that a bfcache will not be used because the page will have a window.opener reference.
-        //   ref. https://web.dev/articles/bfcache#avoid_windowopener_references
+        //   ref. https://web.dev/articles/bfcache?hl=en#avoid_windowopener_references
         evilWindow.location = `${location.origin}/back.html?n=2`;
       }
       await sleep(1000);

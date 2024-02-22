@@ -1166,7 +1166,7 @@ Firstly, you have to disable bfcache[^spanote-1]. There are many conditions wher
 The easy way is to use `RelatedActiveContentsExist`.
 
 - `RelatedActiveContentsExist`: The page opend with `window.open()` and it has a reference of `window.opener`.
-- ref. https://web.dev/articles/bfcache#avoid_windowopener_references
+- ref. https://web.dev/articles/bfcache?hl=en#avoid_windowopener_references
 
 [^spanote-1]: In fact, you can skip this step because bfcache is disabled by [default options](https://github.com/puppeteer/puppeteer/blob/v19.2.0/packages/puppeteer-core/src/node/ChromeLauncher.ts#L175) of puppeteer.
 
@@ -1352,7 +1352,7 @@ Example payload:
         // Access to the deleted page again using History API
         // Then, the browser will render the cached page and the XSS will occur!
         // Note that a bfcache will not be used because the page will have a window.opener reference.
-        //   ref. https://web.dev/articles/bfcache#avoid_windowopener_references
+        //   ref. https://web.dev/articles/bfcache?hl=en#avoid_windowopener_references
         evilWindow.location = `${location.origin}/back.html?n=2`;
       }
       await sleep(1000);
